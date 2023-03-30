@@ -5,7 +5,10 @@ describe("fizzbuzz", () => {
     it('returns a string', () => {
         expect(typeof fizzBuzz(5)).toBe('string')
     })
-    it('returns Fizz for multiples of three', () => {
+    it('returns Fizz for three', () => {
         expect(fizzBuzz(3)).toEqual('Fizz')
+    })
+    it('returns Buzz for five', () => {
+        expect(fizzBuzz(5)).toEqual('Buzz')
     })
 });
