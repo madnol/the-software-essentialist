@@ -8,6 +8,9 @@ describe("fizzbuzz", () => {
     it("should be equal or greater than 1", () => {
         expect(() => fizzBuzz(-1)).toThrow('The number should be equal or greater than 1');
     })
+    it("should be equal or less than 100", () => {
+        expect(() => fizzBuzz(200)).toThrow('The number should be equal or less than 100');
+    })
     it('returns Fizz for three', () => {
         expect(fizzBuzz(3)).toEqual('Fizz')
     })
