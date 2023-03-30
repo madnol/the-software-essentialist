@@ -5,6 +5,9 @@ describe("fizzbuzz", () => {
     it('returns a string', () => {
         expect(typeof fizzBuzz(5)).toBe('string')
     })
+    it("should be equal or greater than 1", () => {
+        expect(() => fizzBuzz(-1)).toThrow('The number should be equal or greater than 1');
+    })
     it('returns Fizz for three', () => {
         expect(fizzBuzz(3)).toEqual('Fizz')
     })
@@ -18,6 +21,6 @@ describe("fizzbuzz", () => {
         expect(fizzBuzz(10)).toEqual('Buzz')
     })
      it('returns FizzBuzz for multiple of both three and five', () => {
-        expect(fizzBuzz(30)).toEqual('FizzBuzz')
+        expect(fizzBuzz(15)).toEqual('FizzBuzz')
     })
 });
